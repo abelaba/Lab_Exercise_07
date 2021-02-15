@@ -10,34 +10,23 @@ document.addEventListener('DOMContentLoaded',delay)
 
 
 
-var sec = 0;
-var minute = 0;
-var y = -90;
-var i = 0;
-var x = -90;
-var z = -150;
+
+
+
 function delay(){
     setTimeout(()=>{
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        h = h % 12 || 12;
 
         
-        secondhand.style.transform = `rotate(${x}deg)`;
-        console.log(x,sec);
-        x+=6;
-        sec +=1;
-        if(sec==60){
-            sec=0;
-            y +=6
-            minutehand.style.transform = `rotate(${y}deg)`;
-            minute +=1
-            if(minute==60){
-                z+=30;
-                hourhand.style.transform = `rotate(${z}deg)`;
-                
-
-            }
-            
-
-        }
+        secondhand.style.transform = `rotate(${(s-15)*6}deg)`;
+        minutehand.style.transform = `rotate(${(m-15)*6}deg)`;
+        hourhand.style.transform = `rotate(${(h-3)*30}deg)`;
+        console.log(today.getSeconds()*6);
+        
         
         if(true){
             delay()
