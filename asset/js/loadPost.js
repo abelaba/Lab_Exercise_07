@@ -5,7 +5,7 @@ const postDiv = document.getElementById('myPost');
 
 //load a single post function 
 function loadPost() {
-    console.log("a");
+    
     const xhr = new XMLHttpRequest();
 
     //change file URL up on your location
@@ -15,6 +15,7 @@ function loadPost() {
         if (this.status === 200)     //check the status  
            {
             const post = JSON.parse(this.responseText);
+           
             let output = `
      <div class="item">
           <div class="image"> <img src="${post.image}"> </div>

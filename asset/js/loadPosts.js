@@ -15,9 +15,11 @@ function loadPosts() {
         if (this.status === 200)     //check the status  
            {
             const post = JSON.parse(this.responseText);
-            console.log(post);
+            
+            let output 
             post.forEach(post => {
-                let output = `
+                
+                output += `
                 <div class="item">
                     <div class="image"> <img src="${post.image}"> </div>
                     <div class="content">
@@ -30,7 +32,7 @@ function loadPosts() {
                             <div class="extra"> <a class="ui floated basic violet button" href="#">Read Mores</a> </div>
                     </div>
                 </div>           `;
-            postDiv.innerHTML = output;
+            postDiv2.innerHTML = output;
                 
             });
             

@@ -25,9 +25,7 @@ function delay(){
         secondhand.style.transform = `rotate(${(s-15)*6}deg)`;
         minutehand.style.transform = `rotate(${(m-15)*6}deg)`;
         hourhand.style.transform = `rotate(${(h-3)*30}deg)`;
-        console.log(today.getSeconds()*6);
-        
-        
+
         if(true){
             delay()
         }
