@@ -1,0 +1,54 @@
+
+body{
+    padding-top: 30px;
+}
+
+
+
+img{
+    left:300px;
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.timer{
+    position: relative;
+    left: -70px;
+    top:-308px;
+    max-width:max-content;
+}
+
+
+.second-hand{
+    background-color:black;
+    position: relative;
+    width: 200px;
+    height: 5px;
+    top: 6px;
+    transform-origin: left;
+   
+    
+}
+
+.minute-hand{
+    
+    background-color: black;
+    position: relative;
+    width: 150px;
+    height: 10px;
+    transform-origin: left;
+    transform: rotate(-90deg);
+
+}
+.hour-hand{
+    
+    background-color:black;
+    position: relative;
+    top:-10px;
+    width: 150px;
+    height: 10px;
+    transform-origin: left;
+
+}
+
